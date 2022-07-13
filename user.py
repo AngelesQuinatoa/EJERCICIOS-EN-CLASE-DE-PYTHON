@@ -1,7 +1,9 @@
-from mailbox import NoSuchMailboxError
+from account import Account
 
 
-class User :
-    id          =int
-    nombre      =str
-    apellido    =str
+class User(Account) :
+    id     = int
+    
+    def __init__(self, name, document, email, password, gender, numberCell, age, id):
+        super().__init__(name, document, email, password, gender, numberCell, age)
+        self.id         =id
