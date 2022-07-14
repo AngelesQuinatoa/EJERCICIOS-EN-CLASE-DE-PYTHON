@@ -8,7 +8,6 @@ class Car :
     driver      = Account("","")
     passaggers  = int
     brand       = str
-    model       = str
     licence     = str
     
     def __init__(self, license, driver):

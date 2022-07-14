@@ -1,9 +1,11 @@
+from socket import INADDR_UNSPEC_GROUP
 from account import Account
 
 
 class User(Account) :
-    id     = int
+    idUser     = int
     
-    def __init__(self, name, document, email, password, gender, numberCell, age, id):
+    def __init__(self, name, document, email, password, gender, numberCell, age, idUser):
         super().__init__(name, document, email, password, gender, numberCell, age)
-        self.id         =id
+        self.idUser       = idUser 
+        

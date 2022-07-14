@@ -5,8 +5,8 @@ class Bank(Payment):
     identification      = str
     numberAccount       = int
     
-    def __init__(self, id, ammouny, bank, identification, numberAccount):
-        super().__init__(id, ammouny)
+    def __init__(self, id, typePayment, ammouny, date, bank, identification, numberAccount):
+        super().__init__(id, ammouny, date)
         self.bank           = bank
         self.identification = identification
         self.numberAccount  = numberAccount
