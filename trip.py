@@ -1,15 +1,13 @@
-
-
 from car import Car
 from driver import Driver
 from payment import Payment
-from account import Account
+from user import User
 from rute import Rute
 
 
-class Trip(Car, Payment, Account, Rute, Driver):
+class Trip(Car, Payment, User, Rute, Driver):
     idTrip         = int
     
-    def __init__(self, license, driver, idUser, idDriver, idTrip, star, end, kmDistance, typePayment, ammount, date):
-        super().__init__(self, license, driver, idUser, idDriver, idTrip, star, end, kmDistance, typePayment, ammount, date )
-        self.idTrip             = idTrip
+    def __init__(self, idTrip, idUser, idDriver, star, end, kmDistance, typePayment, ammount, date, licence, driver ):
+        super().__init__(idTrip, idUser, idDriver, star, end, kmDistance, typePayment, ammount, date, licence, driver)
+        self.idTrip     = idTrip

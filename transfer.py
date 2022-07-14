@@ -4,5 +4,5 @@ from bank import Bank
 
 class Transfer(Bank):
     
-    def __init__(self, id, ammouny, date, bank, identification, numberAccount, typePayment):
-        super().__init__(id, ammouny, date, bank, identification, numberAccount, typePayment )
+    def __init__(self, id, ammount, date, bankName, identification, numberAccount, typePayment):
+        super().__init__(id, ammount, date, bankName, identification, numberAccount, typePayment )

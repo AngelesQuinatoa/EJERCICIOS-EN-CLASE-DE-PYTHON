@@ -1,3 +1,6 @@
+import email
+
+
 class Account:
     id          = int
     name        = str
@@ -6,16 +9,12 @@ class Account:
     password    = str
     gender      = str
     numberCell  = int
+    age         = int
     
     
     #Metodo constructor en Python
-    def __init__(self, name, document, email, password, gender, numberCell, age):
+    def __init__(self, name, document):
         self.name       = name
         self.document   = document 
-        self.email      = email
-        self.password   = password
-        self.gender     = gender
-        self.numberCell = numberCell
-        
         
         

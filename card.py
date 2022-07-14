@@ -5,9 +5,9 @@ class Card(Bank):
     cardSecurityCode    = int
     cardDate            = int
     
-    def __init__(self, id, typePayment, ammouny, date, bank, identification, numberAccount, cardNumber, cardSecurityCode, cardDate):
-        super().__init__(id, typePayment,  ammouny, date, bank, identification, numberAccount)
-        self.cardNumber         = cardNumber
-        self.cardSecurityCode   = cardSecurityCode
-        self.cardDate           = cardDate
-    
+    def __init__(self, id, ammount, typePayment, date, bankName, identification, numberAccount, cardNumber, cardDate, cardSecurityCode):
+        super().__init__(id, ammount, typePayment, date, bankName, identification, numberAccount)
+        self.cardDate           =   cardDate
+        self.cardNumber         =   cardNumber
+        self.cardSecurityCode   =   cardSecurityCode
+                            

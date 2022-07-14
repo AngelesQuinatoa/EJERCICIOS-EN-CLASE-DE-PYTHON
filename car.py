@@ -7,7 +7,6 @@ class Car :
     #Tipo de dato cambiado en base a Account(primero importar la información)
     driver      = Account("","")
     passaggers  = int
-    brand       = str
     licence     = str
     
     def __init__(self, license, driver):
